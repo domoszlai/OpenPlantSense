@@ -6,9 +6,9 @@ import datetime
 
 from Subfact_ina219 import INA219
 
-vpin = mraa.Aio(1)
-cpin = mraa.Gpio(14)
-lpin = mraa.Gpio(13)
+vpin = mraa.Aio(1)	# Analog pin for measuring the voltage
+cpin = mraa.Gpio(14)	# Digital pin for switching between voltage/current measurement
+lpin = mraa.Gpio(13)	# Led pin
   
 cpin.dir(mraa.DIR_OUT)  
 lpin.dir(mraa.DIR_OUT)  
